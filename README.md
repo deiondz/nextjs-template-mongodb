@@ -14,12 +14,24 @@ Click the "Deploy" button to clone this repo, create a new Vercel project, setup
 
 ## Local Setup
 
+### Package Manager
+
+This project uses [Bun](https://bun.sh) as its package manager. Install Bun first:
+
+```bash
+# macOS/Linux
+curl -fsSL https://bun.sh/install | bash
+
+# Windows (PowerShell)
+powershell -c "irm bun.sh/install.ps1 | iex"
+```
+
 ### Installation
 
 Install the dependencies:
 
 ```bash
-npm install
+bun install
 ```
 
 ### Development
@@ -45,7 +57,7 @@ MONGODB_URI=mongodb+srv://<username>:<password>@<cluster-url>/<database>?retryWr
 #### Start the development server
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
